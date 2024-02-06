@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="settings.css">
-    <title>settings</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="settings.css">
+        <link rel="stylesheet" href="../bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <title>settings</title>
+    </head>
+    <body class="body">
+        <div>
+            <div class="menu">
+                <a href="../interface/index.html" class="back-button" title="Back To Home">
+                    <i class="fas fa-arrow-left" title="Back Home"></i>
+                </a>
+                <br>
+                <h1>Settings</h1>
+            </div>
+            <table class="table table-bordered table-dark">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Country</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th>1</th>
+                    <td class="table-warning">Lokmane Loukhmi</td>
+                    <td class="table-warning">Lokmane@gmail.com</td>
+                    <td class="table-warning">Morocco</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="change-information">
+            <div class="profile-change-img">
+                <h2>Profile Photo <i class="material-icons">crop_original</i></h2>
+                <img src="../../images/F6-hg_2WsAArNwi.jpg">
+                <div class="change-img">
+                    <button>
+                        <label for="pro-img" title="Change Photo">Change Photo<br><i class="material-icons" style="font-size:36px">collections</i></label>
+                        <input type="file" id="pro-img" accept=".jpg, .jpeg, .png"/>
+                    </button>
+                </div>
+            </div>
+            <form class="was-validated">
+                <div class="mb-3 mt-3">
+                    <label for="uname" class="form-label">Change User-Name:</label>
+                    <input type="text" class="form-control" id="username" placeholder="New-name" name="username" required>
+                    <div class="valid-feedback">valide</div>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="em" class="form-label">Change Email:</label>
+                    <input type="email" class="form-control" id="em" placeholder="NEW-Email" name="email" required>
+                    <div class="valid-feedback">valide</div>
+                </div>
+                <div class="mb-3">
+                    <label for="pwd" class="form-label">Change passworad:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="New-Password"name="pswd" required>
+                    <div class="valid-feedback">Strong Password</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Change</button>
+            </form>
+            <div class="row">
+                <h3 id="clm">Color Mode <i class="material-icons">brightness_4</i></h3>
+                <div class="form-check form-switch col" id="row">
+                    <p><i class="material-icons">brightness_3 </i> Dark-Mode</p>
+                    <input type="checkbox" class="form-check-input" id="checkbox">
+                    <p><i class="material-icons">brightness_5 </i> Light-Mode</p>
+                </div>
+            </div>
+        </div>
+        <script src="bootstrap.bundle.min.js"></script>
+    </body>
 </html>

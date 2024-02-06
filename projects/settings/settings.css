@@ -1,0 +1,128 @@
+.body{
+    background-color: #001;
+    color: white;
+}
+.table table-dark{
+    background-color: #001;
+}
+img{
+    border-radius: 50%;
+}
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button i {
+    margin-right: 5px;
+}
+
+.back-button:hover {
+    background-color:rgb(20, 56, 110);
+}
+
+.back-button:active {
+    background-color:rgb(30, 80, 156);
+}
+
+input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    left: -9999px;
+}
+
+.profile-change-img img{
+    width: 20em;
+    height: 20em;
+}
+
+.profile-change-img{
+    width: 22,9em;
+    height: 22.9em;
+    overflow: hidden;
+}
+
+.profile-change-img:hover img{
+    opacity: 0.7;
+}
+
+.profile-change-img:hover .change-img{
+    transform: translateY(-18.5em);
+}
+
+.change-img{
+    margin-left:6.6em;
+    margin-top: 100px;
+}
+
+.change-img button{
+    border: none;
+    border-radius: 20px;
+    background-color:white;
+}
+
+.change-information{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu{
+    background-color: #123;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.back-button {
+    margin-left: 10px;
+}
+
+h1{
+    margin-right: 600px;
+}
+
+a i{
+    font-size:40px;
+    letter-spacing: 2px;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+
+#row{
+    width: 360px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#row p{
+    gap: 20px;
+}
+
+.form-check-input{
+    margin-right:  -50px;
+}
+
+.material-icons:hover h1{
+    background-color: rgb(255, 0, 0);
+}
+
+#clm{
+    padding: 20px;
+    text-align: center;
+}
