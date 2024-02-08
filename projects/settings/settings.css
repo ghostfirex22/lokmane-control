@@ -1,6 +1,9 @@
 .body{
     background-color: #001;
     color: white;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 .table table-dark{
     background-color: #001;
@@ -116,6 +119,7 @@ a i{
 
 .form-check-input{
     margin-right:  -50px;
+    cursor: pointer;
 }
 
 .material-icons:hover h1{
@@ -126,3 +130,24 @@ a i{
     padding: 20px;
     text-align: center;
 }
+
+.form-check-input:checked {
+    background-color: white;
+}
+
+.copyright{
+    font-size: x-large;
+    width: 100%;
+    height: 40px;
+}
+
+.copyright p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+footer{
+    background-color:#123;
+    margin-top:4.1em ;
+}
+

@@ -141,6 +141,7 @@ ul li a i{
 
 
 header{
+    margin: 10px;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -162,6 +163,7 @@ header{
 
 #background-video_t {
     position: static;
+    margin: 10px;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -484,6 +486,7 @@ img{
     flex-direction: row;
     justify-content:space-evenly;
     align-items: center;
+    margin: 10px;
     background-color: #001;
 }
 
@@ -665,6 +668,8 @@ ul li a:hover .fas.fa-sign-out{
 footer{
     background-color:#123;
     display: flex;
+    margin: 10px;
+    
 }
 
 .copyright{
@@ -686,6 +691,7 @@ footer{
 .full_content{
     box-shadow: 1px 5px 10px white;
     border: 1px solid #ffffff;
+    margin: 10px;
 }
 .thanks{
     display: flex;
@@ -707,4 +713,3 @@ footer{
 .thanks_video{
     width:50% ;
 }
-@media (max-width:950px){}
