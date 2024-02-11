@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    background-color: #001;
+}
+
+.tqwe{
+    padding: 2px;
+    margin: 5px 0;
+}
+
+.img-box{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+
+.img-box img{
+    width: 100%;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: white;
+}
+
+.h2_profile{
+    color: white;
+}
+
+.profile:hover{
+    cursor: pointer;
+}
+
+.profile h2{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.menu{
+    background-color: #123;
+    width: 65px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: .5s;
+    position: sticky;
+    top:0px;
+    bottom: 0px;
+    z-index: 1;
+}
+
+.menu:hover{
+     width:260px;
+}
+
+ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+
+ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: .5s;
+}
+
+ul li a:hover, .active{
+    background-color: rgb(20, 56, 110);
+}
+#Settings_spaining{
+    transition: 1s;
+}
+ul li .spaining:hover #Settings_spaining{
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+.log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.log-out a{
+    background-color: red;
+}
+
+ul .log-out a:hover{
+    background-color: black;
+}
+
+.out{
+    transition: 0.3s;
+}
+
+ul .log-out a:hover .out{
+    transition:0.3s ;
+    color:red
+}
+
+ul li a i{
+    font-size: 30px;
+}
+
+
+.fas.fa-star{
+    transition: 0.5s;
+}
+
+ul li a:hover .fas.fa-star{
+    transition: 0.5s;
+    transform: rotateY(360deg);
+    color: yellow;
+}
+
+.fas.fa-home{
+    transition: 0.5s;
+}
+
+ul li #active{
+    background-color: green;
+    transition: 0.3s;
+}
+
+ul li #active:hover{
+    background-color: rgb(20, 56, 110);
+    transition: 0.3s;
+}
+
+ul li a:hover .fas.fa-home{
+    transform:scale(1.2);
+    transition: 0.3s;
+    color: black;
+}
+
+.fas.fa-user-group{
+    transition: 0.3s;
+}
+
+ul li a:hover .fas.fa-user-group{
+    transform: skew(-10deg);
+    transition: 0.3s;
+    color: black;
+}
+
+.fa-chart-pie{
+    transition: 0.3s;
+}
+
+ul li a:hover .fas.fa-chart-pie{
+    transform: scale(1.3);
+    transition: 0.3s;
+    color: rgb(0, 0, 0);
+}
+
+.fa-dice-d20{
+    transition: 0.8s;
+}
+
+ul li a:hover .fa-dice-d20{
+    transform: rotate(-360deg);
+    transition: all;
+    transition: 0.8s;
+    color: rgb(0, 0, 0);
+}
+
+.fas.fa-sign-out{
+    transition: 0.3s;
+}
+
+ul li a:hover .fas.fa-sign-out{
+    color: red;
+    transform: translateX(20px);
+    transition: 0.3s;
+}
+
+.fa-comment-dots{
+    transition: 0.3s;
+}
+
+ul li a:hover .fa-comment-dots{
+    color:black;
+    transform: scale(1.2) rotate(-10deg);
+    transition: 0.3s;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+  
+  .fa:hover {
+      opacity: 0.7;
+}
+  
+  .fa-facebook-f {
+    background: #3B5998;
+    border-radius: 50%;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    border-radius: 50%;
+}
+
+.fa-youtube-play {
+    background: rgb(255, 0, 0);
+    border-radius: 50%;
+}
+
+.fa-instagram {
+    background: #125688;
+    border-radius: 50%;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    border-radius: 50%;
+}
+
+.fa-telegram{
+    background-color: rgb(2, 166, 221);
+    border-radius: 50%;
+}
+
+#assasin_header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;   
+}
+
+#assasin_header img{
+    width: 90% ;
+}
+
+.nac_div h3{
+    font-family: 'Lato', sans-serif;
+}
+
+.nac_div p{
+    font-family: 'Lato', sans-serif;
+}
+
+.nac_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 600;
+    position: absolute;
+    z-index: 1;
+    background-color:rgba(6, 6, 255, 0.295);
+    width: 70%;
+    height: 40%;
+    word-spacing: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Lato', sans-serif;
+    text-shadow: 5px 2px 6px red;
+    animation: nac_div;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes nac_div {
+    0%{
+        opacity: 0.4;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.nac_text{
+    transform: skew(0);
+}
+
+.container{
+    width: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 17vh;
+    background-color: rgb(9, 23, 37);
+    font-size: 60px;
+}
+
+.logo{
+    align-self: center;
+    width: 170px;
+    height: 1.3em;
+}
+
+
+@media screen and (max-width: 800px) {
+    #assasin_header img{
+        height: 50vh;
+    }
+    .nac_div{
+        font-size: 20px;
+        width: 50%;
+        height: 20%;
+
+    }
+    .menu:hover{
+        width:65px;
+        z-index: 2;
+   }
+
+   .fa{
+    padding: 0px;
+   }
+}
+
+.games{
+    padding-top:100px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.games div a{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.games div a img:hover{
+    opacity: 0.8;
+}
+
+.games div a img{
+    width: 23em;
+    height: 23em;
+}
+
+#assassin_name{
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+#assassin_price{
+    text-align: center;
+    width: 150px;
+    color: yellow;
+    background-color: rgb(24, 37, 73);
+}
+
+.buy_game{
+    background-image: url('../../images/background-color-image2.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly ;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
