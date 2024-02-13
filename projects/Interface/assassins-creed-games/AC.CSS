@@ -27,6 +27,36 @@ header{
     background-size: cover;
     background-repeat:no-repeat ;
     background-position:center;
+    box-shadow: 3px 3px 10px rgb(44, 26, 26);
+}
+
+@media screen and (max-width: 857px) {
+    li img{
+        height: 50px;
+    }
+    header h1{
+        width: 500px;
+        font-size: 40px;
+    }
+
+    header{
+        height: 40vh;;
+    }
+}
+
+@media screen and (max-width: 513px) {
+    li img{
+        height: 20px;
+    }
+    
+    header h1{
+        width: 200px;
+        font-size: 20px;
+    }
+
+    header{
+        height: 20vh;;
+    }
 }
 
 h1{
@@ -42,8 +72,8 @@ h1{
 }
 
 h2{
-    font-size: 40px;
-    width: 1000;
+    font-size: 30px;
+    width: 1000px;
     color: rgb(255, 255, 255);
     text-align: center;
     text-shadow: 3px 1px 3px rgb(0, 0, 0);
@@ -58,21 +88,9 @@ li img{
     height: 90px;
 }
 
-@media screen and (max-width: 857px) {
-    li img{
-        height: 50px;
-    }
-}
-
-@media screen and (max-width: 513px) {
-    li img{
-        height: 20px;
-    }
-}
-
 .carousel {
     position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    box-shadow: 3px 3px 10px rgba(255, 161, 161, 0.247);
     width: 80%;
     margin-top: 26px;
 }
@@ -202,7 +220,15 @@ video{
     width: 95%;
     height: 50%;
     margin: 50px;
+    box-shadow: 10px 10px 10px rgb(87, 85, 85);
+    transition: 0.3s;
 }
+
+video:hover{
+    transform: scale(1.01);
+    transition: 0.3s;
+}
+
 
 .buy_div{
     text-align: center;
@@ -216,7 +242,10 @@ video{
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-
+    background-image: url('../../../images/test 14.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h3{

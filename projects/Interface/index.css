@@ -11,7 +11,7 @@ html{
 
 body{
     display: flex;
-    background-color: #001;
+    background-color: #001; 
 }
 
 .tqwe{
@@ -121,7 +121,7 @@ ul .log-out a:hover .out{
 }
 
 ul li a i{
-    font-size: 30px;
+    font-size: 10px;
 }
 
 
@@ -335,7 +335,6 @@ header{
         font-size: 20px;
         width: 50%;
         height: 20%;
-
     }
     .menu:hover{
         width:65px;
@@ -353,6 +352,47 @@ header{
    .logo{
     height:0.8em;
     width: 90px;
+   }
+
+   .games{
+    transform: translateY(-150px);
+   }
+   ul li a{ 
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    overflow: hidden;
+}
+
+}
+
+@media screen and (max-width: 500px){
+    #assasin_header img{
+        height: 30vh;
+    }
+    .nac_div{
+        font-size: 10px;
+        width: 30%;
+        height: 10%;
+
+    }
+
+   header{
+    height: 7vh;
+   }
+
+   .logo{
+    height:0.6em;
+    width: 60px;
+   }
+
+   .games{
+    transform: translateY(-300px);
+   }
+
+   ul li a i{
+    font-size: 10px;
    }
 
 }
