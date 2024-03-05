@@ -126,3 +126,35 @@ a{
     border-radius: 50%;
 }
 
+
+        .send_a_Report{
+	    width:1000px ;
+        height: 40vh ;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+
+        textarea{
+            width: 800px;
+            height: 500px;
+            max-width: 800px;
+            max-height: 500px;
+            align-self: self-start;
+        }
+
+        button{
+            width:200px ;
+            height: 50px;
+            align-self: flex-end;
+            position: relative;
+            right: 100px;
+        }
+        form{
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+            background-color: #123; 
+        }
