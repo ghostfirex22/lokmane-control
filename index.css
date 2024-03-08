@@ -12,7 +12,7 @@ html{
 body{
     display: flex;
     background-color: #001; 
-    
+    background: linear-gradient(to right, #001,rgb(10, 10, 59) ,rgb(49, 38, 38)); 
 }
 
 .tqwe{
@@ -208,7 +208,7 @@ ul li a:hover .fa-comment-dots{
 }
 
 .fa {
-    padding: 20px;
+    padding: 10px;
     font-size: 30px;
     width: 25px;
     text-align: center;
@@ -221,33 +221,58 @@ ul li a:hover .fa-comment-dots{
 }
   
   .fa-facebook-f {
-    background: #3B5998;
+    border:1px solid white;
     border-radius: 50%;
+}
+
+.fa-facebook-f:hover{
+    background: #3B5998;
 }
 
 .fa-twitter {
-    background: #55ACEE;
+    border:1px solid white;
     border-radius: 50%;
+}
+
+.fa-twitter:hover {
+    background: #55ACEE;
 }
 
 .fa-youtube-play {
-    background: rgb(255, 0, 0);
+    border:1px solid white;
+
     border-radius: 50%;
+}
+
+.fa-youtube-play:hover {
+    background: rgb(255, 0, 0);
 }
 
 .fa-instagram {
-    background: #125688;
+    border:1px solid white;
     border-radius: 50%;
+}
+
+.fa-instagram:hover{
+    background: #125688;
 }
 
 .fa-pinterest {
-    background: #cb2027;
+    border:1px solid white;
     border-radius: 50%;
 }
 
+.fa-pinterest:hover {
+    background: #cb2027;
+}
+
 .fa-telegram{
-    background-color: rgb(2, 166, 221);
+    border:1px solid white;
     border-radius: 50%;
+}
+
+.fa-telegram:hover {
+    background-color: rgb(2, 166, 221);
 }
 
 #assasin_header{
@@ -327,6 +352,15 @@ ul li a:hover .fa-comment-dots{
     width: 100%;
 }
 
+.support{
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.support:hover{
+    text-decoration: underline;
+}
+
 header{
     display: flex;
     flex-direction: row;
@@ -339,10 +373,31 @@ header{
     
 }
 
+.div_icons{
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .logo{
-    align-self: center;
-    width: 170px;
-    height: 1.3em;
+    padding-top: 20px;
+    width: 200px;
+    height: 25vh;
+    animation: logo 3s infinite backwards ease-in-out;
+}
+
+@keyframes logo {
+    0%{
+        opacity: 0.8;
+    }
+    50%{
+        opacity: 0.9;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 
@@ -444,6 +499,9 @@ header{
     margin: 20px;
     text-decoration: none;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 3px 5px 5px rgb(2, 2, 26);
+    border-radius: 10px;
+    border:1px solid #123;
 }
 
 .games div a img:hover{
@@ -453,6 +511,8 @@ header{
 .games div a img{
     width: 23em;
     height: 19em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;  
 }
 
 #assassin_name{
@@ -484,17 +544,163 @@ header{
 }
 
 .copyright{
+    display: flex;
     font-size: x-large;
-    width: 100%;
-    height: 40px;
+    width: 60%;
+    align-items: center ;
+}
+
+.copyright *{
+    margin: 10px;
 }
 
 .copyright p{
     color: rgb(255, 255, 255);
     text-align: center;
+    margin: 0px;
+}
+
+.copy_cookie a{
+    font-size: x-large;
+    text-decoration: none;
+    align-self: center;
+}
+
+.copy_cookie a:hover{
+    text-decoration: underline;
+}
+
+.hr_row{
+    align-self: center;
+    height: 30px;
 }
 
 footer{
     background-color:#123;
+    background: linear-gradient(to right, rgb(0, 0, 71),#123 ,#123); 
+
     margin-top:4.1em ;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.copy_cookie{
+    width: 100%;
+    display: flex;  
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contact_us{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: space-between;
+}
+
+.hr_column{
+    display: block;
+    width: 95%;
+
+}
+
+.fa-globe ,.fa-bell,.fa-box{
+    padding: 0px;
+    transition: 0.5s;
+}
+
+.fa-box:hover{
+    transition: 1s;
+    animation: box 1s infinite alternate ease-in-out;
+}
+
+@keyframes box {
+    0%{
+        transform: translateY(-5px);
+    }
+    33%{
+        transform: translateY(5px);
+    }
+    66%{
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(5px);
+    }
+}
+
+.fa-globe:hover{
+    transition: 0.5s;
+    transform: rotateY(180deg);
+}
+
+.fa-bell:hover{
+    transition: 1s;
+    animation: bell 2s infinite alternate ease-in-out;
+}
+
+@keyframes bell {
+    0%{
+        transform: rotate(25deg);
+    }
+    20%{
+        transform: rotate(-25deg);
+    }
+    40%{
+        transform: rotate(25deg);
+    }
+    60%{
+        transform: rotate(-25deg);
+    }
+    80%{
+        transform: rotate(25deg);
+    }
+    100%{
+        transform: rotate(-25deg);
+    }
+}
+
+.footer_div{
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+
+.content_contact_us{    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+
+.back i{
+    color: #125688;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.back:hover i{
+    transition:0.5s ;
+    animation: back 1s infinite ease-in-out alternate;
+}
+
+@keyframes back {
+    0%{
+        transform: translateY(20px);
+    }
+    50%{
+        transform:  translateY(-20px) ;
+    }
+    100%{
+        transform: translateY(0);
+    }
 }

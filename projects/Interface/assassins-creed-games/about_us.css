@@ -21,11 +21,10 @@ h1{
     box-shadow: 5px 5px 5px #001;
     border-radius: 10px;
 }
-
 .about_us{
-    background-color: #123;
+    background: linear-gradient(to right, #123,rgb(10, 10, 59) ,#123);
     margin: 10px;
-    width: 70%;
+    width: 70%; 
     height: 110vh;
 }
 
@@ -47,6 +46,7 @@ header{
     text-align: center;
     width: 100%;
     background-color: #123;
+    background: linear-gradient(to right, #123,rgb(20, 27, 34) ,rgb(16, 22, 27));
     box-shadow: 5px 5px 5px #001;
 }
 
@@ -61,7 +61,7 @@ header h1{
 }
 
 .media{
-    background-color: #123;
+    background: linear-gradient(to right, #123,rgb(20, 27, 34) ,rgb(16, 22, 27));
     margin: 10px;
     width: 30%;
     height: 110vh;
@@ -156,5 +156,5 @@ a{
             margin: 10px;
             display: flex;
             flex-direction: row;
-            background-color: #123; 
+            background: linear-gradient(to right, #123,rgb(14, 24, 34) ,rgb(16, 22, 27));
         }
