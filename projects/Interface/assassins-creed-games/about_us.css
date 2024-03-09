@@ -1,40 +1,38 @@
 body{
-    background-color: #001;
+    background: linear-gradient(to right, #123,rgb(10, 10, 59) ,#123);
     color: white;
-    background-image: url('../../../images/dark bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 h1{
     text-transform: capitalize;
     text-shadow:2px 2px 5px rgb(128, 58, 58);
-    font-size: 25px;
-    font-family:'Lato', sans-serif;
+    font-size: 40px;
     word-spacing: 1px;
     margin-left: 5px;
     color: aqua;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.about_us,.media{
-    box-shadow: 5px 5px 5px #001;
-    border-radius: 10px;
-}
+
 .about_us{
-    background: linear-gradient(to right, #123,rgb(10, 10, 59) ,#123);
     margin: 10px;
-    width: 70%; 
-    height: 110vh;
+    width: 90%; 
+    height: 100%;
 }
 
 h3{
     width: 95%;
     margin-left: 20px;
     text-align: justify;
+    text-transform: capitalize;
     word-spacing: 1px;
-    font-family:'Lato', sans-serif;
     margin-bottom:50px ;
+    font-size: x-large;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 header{
@@ -51,23 +49,28 @@ header{
 }
 
 header h1{
-    font-size: 50px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    
+    font-size: 70px;
+    text-align: center  ;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;    
 }
 
 .content{
     display: flex;
 }
 
-.media{
-    background: linear-gradient(to right, #123,rgb(20, 27, 34) ,rgb(16, 22, 27));
+hr{
     margin: 10px;
-    width: 30%;
-    height: 110vh;
+}
+
+.media{
+    width: 10%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .media h3{
@@ -79,17 +82,18 @@ header h1{
 
 a{
     font-size:25px;
-    margin: 15px;  
+    margin: 10px;
+    margin-bottom: 90px;
 }
 
 .fa {
-    padding: 20px;
+    padding: 10px;
     font-size: 30px;
     width: 25px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
-    color: white;
+    color: aliceblue;
 }
   
   .fa:hover {
@@ -97,34 +101,60 @@ a{
 }
   
   .fa-facebook-f {
-    background: #3B5998;
+    border:1px solid white;
     border-radius: 50%;
+}
+
+.fa-facebook-f:hover{
+    background: #3B5998;
 }
 
 .fa-twitter {
-    background: #55ACEE;
+    border:1px solid white;
     border-radius: 50%;
+}
+
+.fa-twitter:hover {
+    background: #55ACEE;
 }
 
 .fa-youtube-play {
-    background: rgb(255, 0, 0);
+    border:1px solid white;
+
     border-radius: 50%;
+}
+
+.fa-youtube-play:hover {
+    background: rgb(255, 0, 0);
 }
 
 .fa-instagram {
-    background: #125688;
+    border:1px solid white;
     border-radius: 50%;
+}
+
+.fa-instagram:hover{
+    background: #125688;
 }
 
 .fa-pinterest {
-    background: #cb2027;
+    border:1px solid white;
     border-radius: 50%;
 }
 
+.fa-pinterest:hover {
+    background: #cb2027;
+}
+
 .fa-telegram{
-    background-color: rgb(2, 166, 221);
+    border:1px solid white;
     border-radius: 50%;
 }
+
+.fa-telegram:hover {
+    background-color: rgb(2, 166, 221);
+}
+
 
 
         .send_a_Report{

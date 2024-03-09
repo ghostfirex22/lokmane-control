@@ -353,7 +353,15 @@ ul li a:hover .fa-comment-dots{
 }
 
 .support{
-    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #123;
+    width:120px;
+    height: 8vh;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
     text-decoration: none;
 }
 
@@ -364,27 +372,41 @@ ul li a:hover .fa-comment-dots{
 header{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     height: 17vh;
     background-color: rgb(9, 23, 37);
     font-size: 60px;
-    
 }
 
 .div_icons{
-    width: 15%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+.div_icons div button{
+    width: 150px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #001;
+    border: none;
+    height: 8vh;
+}
+
+.div_icons div button i{
+    color: rgb(0, 0, 161);
 }
 
 .logo{
-    padding-top: 20px;
-    width: 200px;
-    height: 25vh;
+    width: 130px;
+    height: 13vh;
     animation: logo 3s infinite backwards ease-in-out;
 }
 
@@ -400,7 +422,15 @@ header{
     }
 }
 
+@media screen and (max-width: 1100px) {
 
+.div_icons div button h3,.div_icons div button .fa-chevron-circle-down{
+    display: none;
+   }
+    .div_icons div button{
+        width:50px ;
+    }
+}
 @media screen and (max-width: 800px) {
     #assasin_header img{
         height: 50vh;
@@ -437,6 +467,8 @@ header{
     align-items: center;
     gap: 40px;
    }
+
+
 }
 
 @media screen and (max-width: 500px){
@@ -509,7 +541,7 @@ header{
 }
 
 .games div a img{
-    width: 23em;
+    width: 22em;
     height: 19em;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;  
@@ -612,8 +644,8 @@ footer{
     transition: 0.5s;
 }
 
-.fa-box:hover{
-    transition: 1s;
+.div_icons div button:hover .fa-box{
+    transition: 0.5s;
     animation: box 1s infinite alternate ease-in-out;
 }
 
@@ -632,12 +664,26 @@ footer{
     }
 }
 
-.fa-globe:hover{
+.div_icons hr {
+    height: 40px;
+    opacity: 0.5;
+}
+
+.div_icons div button:hover .fa-globe{
     transition: 0.5s;
     transform: rotateY(180deg);
 }
 
-.fa-bell:hover{
+.fa-chevron-circle-down{
+    transition: 0.5s;
+}
+
+.div_icons div button:hover .fa-chevron-circle-down{
+    transition:0.5s ;
+    transform: rotate(-90deg);
+}
+
+.div_icons div button:hover .fa-bell{
     transition: 1s;
     animation: bell 2s infinite alternate ease-in-out;
 }
@@ -704,3 +750,4 @@ footer{
         transform: translateY(0);
     }
 }
+
