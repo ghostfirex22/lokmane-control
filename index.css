@@ -610,7 +610,6 @@ header{
 footer{
     background-color:#123;
     background: linear-gradient(to right, rgb(0, 0, 71),#123 ,#123); 
-
     margin-top:4.1em ;
     height: 50vh;
     display: flex;
@@ -636,7 +635,6 @@ footer{
 .hr_column{
     display: block;
     width: 95%;
-
 }
 
 .fa-globe ,.fa-bell,.fa-box{
