@@ -749,3 +749,89 @@ footer{
     }
 }
 
+#lg-btn-content{
+    display: none;
+    width: 250px;
+    height: 40vh;
+    color: aliceblue;
+    background-color: #123;
+    z-index: 2 ;
+    position:absolute;
+    top: 80px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 10px 2px black;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+#msg-btn-content,#box-btn-content{
+    display: none;
+    width: 450px;
+    height: 40vh;
+    color: aliceblue;
+    background-color: #123;
+    z-index: 2 ;
+    position:absolute;
+    top: 80px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 10px 2px black;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.language_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.msg_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lg-btn-content-text{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#msg-btn-content,#box-btn-content{
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    text-shadow: 4px 2px 5px black;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#box-btn-content button{
+    cursor: pointer;
+    font-size: larger;
+    transition: 0.5s;
+    background-color: #1B4F72;
+}
+
+#box-btn-content button:hover{
+    background-color: #5DADE2;
+    transition: 0.5s;
+}
+
+.lg-btn-content-text div{
+    border: 4px solid #5D6D7E;
+    width: 70%;
+    cursor: pointer;
+}
+

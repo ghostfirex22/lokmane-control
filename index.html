@@ -83,27 +83,42 @@
             
             <div class="div_icons">
                 <div class="language_div">
-                    <button>
+                    <button id="btn-lg" style="cursor: pointer;">
                         <i class="fa-solid fa-globe" style="font-size: 32px;"></i>
-                        <h3>language</h3>
+                        <h3>Language</h3>
                         <i class="fas fa-chevron-circle-down" style="font-size:24px"></i>
                     </button>
+                    <div id="lg-btn-content">
+                        <div class="lg-btn-content-text">
+                            <div><p>Arabic</p></div>
+                            <div><p>English</p></div>
+                            <div><p>French</p></div>
+                            <div><p>Spanish</p></div>
+                        </div>
+                    </div>
                 </div>
                 <hr>
                 <div class="msg_div">
-                    <button>	
+                    <button id="btn-msg" style="cursor: pointer;">	
                         <i class="fas fa-bell" style="font-size:32px"></i>
-                        <h3>Msagges</h3>
+                        <h3>Massages</h3>
                         <i class="fas fa-chevron-circle-down" style="font-size:24px"></i>
                     </button>
+                    <div id="msg-btn-content">
+                        <p>You Don't Have Any Massage Yet</p>
+                    </div>
                 </div>
                 <hr>
                 <div class="box_div">
-                    <button>
+                    <button id="btn-rewards" style="cursor: pointer;">
                         <i class="fa-solid fa-box" style="font-size:32px"></i>
-                        <h3>rewards</h3>
+                        <h3>Rewards</h3>
                         <i class="fas fa-chevron-circle-down" style="font-size:24px"></i>
                     </button>
+                    <div id="box-btn-content">
+                        <p>Sorry But You Didn't Complete Any Achievement To Collect Your Rewards</p>
+                        <button>Play Game</button>
+                    </div>
                 </div>
                 <hr>
                 <a href="projects/Interface/assassins-creed-games/about_us.html" target="_blank" class="support">Support</a>
@@ -293,6 +308,7 @@
     </div>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <script src="projects/settings/settings.js"></script>
+    <script src="interface.js"></script>
 
 </body>
 </html>
