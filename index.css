@@ -611,7 +611,7 @@ footer{
     background-color:#123;
     background: linear-gradient(to right, rgb(0, 0, 71),#123 ,#123); 
     margin-top:4.1em ;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     align-items: center;
 }
@@ -835,3 +835,8 @@ footer{
     cursor: pointer;
 }
 
+.information{
+    color: red;
+    font-size: x-large;
+    padding-top: 30px;
+}
